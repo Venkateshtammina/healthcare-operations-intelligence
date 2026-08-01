@@ -8,14 +8,6 @@ The project uses Python for data validation, feature engineering, exploratory
 analysis, and forecasting; PostgreSQL for the analytical data model; and Power
 BI for executive reporting.
 
-## Project website
-
-The responsive portfolio site is stored in [`docs/`](docs/) and is designed for
-direct deployment through GitHub Pages from the repository's default branch and
-`/docs` publishing folder. It presents the project story, headline results, dashboard
-pages, data pipeline, star schema, and model comparison without requiring a
-Power BI installation.
-
 ## Business objective
 
 The analysis answers four practical questions:
@@ -100,6 +92,42 @@ It contains four pages:
 - **Forecasting** — selected model, validation metrics, recent actuals,
   12-week forecast, uncertainty bounds, model comparison, and weekly details.
 
+### Executive Overview
+
+National operating KPIs, geographic distribution, and the highest-volume
+hospitals and DRGs.
+
+<p align="center">
+  <img src="Dashboard%20images/executive-overview.png" alt="Healthcare Operations Intelligence Executive Overview Power BI dashboard" width="100%">
+</p>
+
+### Financial Performance
+
+Estimated charges and payments, coverage ratios, hospital financial profiles,
+and high-volume charge-to-payment review.
+
+<p align="center">
+  <img src="Dashboard%20images/financial-performance.png" alt="Healthcare Operations Intelligence Financial Performance Power BI dashboard" width="100%">
+</p>
+
+### Operational Performance
+
+Rural and urban comparisons, state charge benchmarks, and hospital and DRG
+volume rankings.
+
+<p align="center">
+  <img src="Dashboard%20images/operational-performance.png" alt="Healthcare Operations Intelligence Operational Performance Power BI dashboard" width="100%">
+</p>
+
+### Forecasting
+
+Recent observed hospitalization rates, a 12-week forecast, approximate 95%
+bounds, chronological model validation, and weekly forecast details.
+
+<p align="center">
+  <img src="Dashboard%20images/forecasting.png" alt="Healthcare Operations Intelligence Forecasting Power BI dashboard" width="100%">
+</p>
+
 The PostgreSQL semantic model uses a star schema:
 
 ```text
@@ -144,6 +172,7 @@ creates eight approved features:
 
 ```text
 healthcare-operations-analytics/
+├── Dashboard images/       # Power BI page screenshots shown in this README
 ├── dashboard/              # Power BI report, DAX reference, build guide
 ├── data/
 │   ├── raw/                # Downloaded source data; ignored by Git
