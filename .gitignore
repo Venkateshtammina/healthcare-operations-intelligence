@@ -21,6 +21,9 @@ data/processed/*
 # Power BI temporary lock files
 ~$*.pbix
 
+# Local website inspection artifacts
+docs/site-preview*.png
+
 # Operating-system files
 .DS_Store
 Thumbs.db

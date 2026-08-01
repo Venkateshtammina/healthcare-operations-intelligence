@@ -8,6 +8,14 @@ The project uses Python for data validation, feature engineering, exploratory
 analysis, and forecasting; PostgreSQL for the analytical data model; and Power
 BI for executive reporting.
 
+## Project website
+
+The responsive portfolio site is stored in [`docs/`](docs/) and is designed for
+direct deployment through GitHub Pages from the `main` branch and `/docs`
+publishing folder. It presents the project story, headline results, dashboard
+pages, data pipeline, star schema, and model comparison without requiring a
+Power BI installation.
+
 ## Business objective
 
 The analysis answers four practical questions:
