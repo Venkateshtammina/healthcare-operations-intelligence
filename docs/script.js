@@ -63,7 +63,7 @@ if (isGitHubPages) {
     });
 
     document.querySelectorAll("[data-report-link]").forEach((link) => {
-      link.href = `${repositoryUrl}/raw/refs/heads/main/dashboard/healthcare_operations_intelligence.pbix`;
+      link.href = `${repositoryUrl}/raw/HEAD/dashboard/healthcare_operations_intelligence.pbix`;
     });
   }
 }
